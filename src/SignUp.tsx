@@ -1,5 +1,5 @@
+import style from "./styles/signup.module.css";
 import { Link } from "react-router-dom";
-import style from "./styles/login.module.css";
 
 const Login = () => {
     return (
@@ -22,11 +22,10 @@ const Login = () => {
                         <input type="password" placeholder="Sua senha"/>
                     </div>
 
-                    <button className={style.buttonSubmit}> Acessar</button>
+                    <button className={style.buttonSubmit}>Criar conta</button>
 
                     <div className={style.loginMoreInfo}>
-                        <Link to="">Esqueceu sua senha?</Link>
-                        <Link to="/signup" className={style.linkRegisterAccount}>Criar conta</Link>
+                        <Link to="/login">Já tem uma conta? <span className={style.linkRegisterAccount}>Entrar</span> </Link>
                     </div>
                 </form>
             

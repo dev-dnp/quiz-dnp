@@ -48,8 +48,7 @@
 .loginMoreInfo
 {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+    justify-content: center;
     font-size: var(--text-small);
     margin-top: 1.3rem;
     gap: .4rem;
