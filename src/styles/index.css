@@ -1,0 +1,55 @@
+*, *::after, *::before 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+:root 
+{
+    --bgA: #121214;
+    --bgB: #f16c00;
+    --colorTextA: #f0f6fc;
+    --colorTextB: #d3d3d3;
+    --colorTextC: #9198a1;
+    --colorTextD: #ffb06f;
+    --text-base: 1rem;          /* 16px */
+    --text-body: 0.875rem;      /* 14px */
+    --text-small: 0.75rem;      /* 12px */
+
+    --titleA: 32px;             /* Maior título */
+    --titleB: 24px;             /* Subtítulo */
+    --titleC: 20px;             /* Seção */
+    --titleD: 18px;             /* Sub-seção */
+    --titleE: 16px;             /* Título menor */
+}
+
+html
+{
+    font-size: 16px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+li 
+{
+    list-style: none;
+}
+
+button, input, textarea
+{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.container 
+{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

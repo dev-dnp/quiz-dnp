@@ -1,0 +1,73 @@
+.formWrap
+{
+    background-color: var(--bgA);
+    width: 100dvw;
+    height: 100dvh;
+    color: var(--colorTextA);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formBox 
+{
+    font-size: var(--text-body);
+}
+
+.boxInput 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem 0;
+    margin-top: 1rem;
+}
+
+.boxInput input
+{
+
+    width: 21.5rem;
+    height: 3rem;
+    border: 1px solid var(--colorTextB);
+    padding: 0.5rem;
+    border-radius: .25rem;
+    color: var(--colorTextB);
+
+}
+
+.buttonSubmit 
+{
+    width: 21.5rem;
+    height: 3rem;
+    border-radius: .25rem;
+    color: var(--colorTextA);
+    background-color: var(--bgB);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.loginMoreInfo
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    font-size: var(--text-small);
+    margin-top: 1.3rem;
+    gap: .4rem;
+}
+
+
+
+.loginMoreInfo a 
+{
+    color: inherit;
+}
+
+.loginMoreInfo a:hover 
+{
+    text-decoration: underline;
+}
+
+.loginMoreInfo .linkRegisterAccount
+{
+    color: var(--colorTextD);
+}
