@@ -14,6 +14,8 @@
     --colorTextB: #d3d3d3;
     --colorTextC: #9198a1;
     --colorTextD: #ffb06f;
+
+
     --text-base: 1rem;          /* 16px */
     --text-body: 0.875rem;      /* 14px */
     --text-small: 0.75rem;      /* 12px */
@@ -23,6 +25,9 @@
     --titleC: 20px;             /* Seção */
     --titleD: 18px;             /* Sub-seção */
     --titleE: 16px;             /* Título menor */
+
+    --borderA: 1px solid #49494b;
+    --borderFocusA: 1px solid #bc783f;
 }
 
 html

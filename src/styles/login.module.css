@@ -27,11 +27,16 @@
 
     width: 21.5rem;
     height: 3rem;
-    border: 1px solid var(--colorTextB);
+    border: var(--borderA);
     padding: 0.5rem;
     border-radius: .25rem;
     color: var(--colorTextB);
     font-size: var(--text-body);
+}
+
+.boxInput input:focus 
+{
+    border: var(--borderFocusA);
 }
 
 .buttonSubmit 
@@ -80,4 +85,9 @@
 .divLogoPage img 
 {
     transform: translateX(-20px);
+}
+
+.loginMoreInfo .linkRegisterAccount
+{
+    color: var(--colorTextD);
 }

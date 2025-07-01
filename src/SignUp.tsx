@@ -1,4 +1,4 @@
-import style from "./styles/signup.module.css";
+import style from "./styles/login.module.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {

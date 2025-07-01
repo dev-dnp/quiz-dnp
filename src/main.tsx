@@ -5,6 +5,7 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './Login.tsx';
 import SignUp from './SignUp.tsx';
+import ForgotPassword from './forgotPassword.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
       path: "/signup",
       element: <SignUp />
+  },
+  {
+      path: "/forgot-password",
+      element: <ForgotPassword />
   },
 ])
 
