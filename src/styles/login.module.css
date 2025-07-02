@@ -50,6 +50,11 @@
     cursor: pointer;
 }
 
+.buttonSubmit:active
+{
+    transform: scale(0.98);
+}
+
 .loginMoreInfo
 {
     display: flex;
@@ -90,4 +95,10 @@
 .loginMoreInfo .linkRegisterAccount
 {
     color: var(--colorTextD);
+}
+
+.inputMessageError 
+{
+    color: #ff6d6d;
+    font-size: var(--text-small);
 }

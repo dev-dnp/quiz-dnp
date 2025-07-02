@@ -27,6 +27,8 @@
     --titleE: 16px;             /* Título menor */
 
     --borderA: 1px solid #49494b;
+    --borderB: 1px solid #29292e;
+    
     --borderFocusA: 1px solid #bc783f;
 }
 
@@ -57,4 +59,10 @@ button, input, textarea
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+
+body 
+{
+    background-color: var(--bgA);
 }

@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
-import App from './App.tsx'
+// import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './Login.tsx';
 import SignUp from './SignUp.tsx';
-import ForgotPassword from './forgotPassword.tsx';
+import ForgotPassword from './ForgotPassword.tsx';
+import Home from './Home.tsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
       path: "/forgot-password",
       element: <ForgotPassword />
+  },
+  {
+      path: "/dashboard/home",
+      element: <Home />
   },
 ])
 
