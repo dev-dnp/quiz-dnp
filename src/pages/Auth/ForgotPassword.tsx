@@ -5,6 +5,7 @@ import {useForm} from "react-hook-form";
 type FormData = {
     email: string
 }
+
 const Login = () => {
 
     const { register, handleSubmit, formState:{errors}} = useForm<FormData>();

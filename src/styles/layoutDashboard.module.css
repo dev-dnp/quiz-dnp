@@ -60,10 +60,12 @@
     padding-left: .8rem;
 }
 
-.dashMenu .active
+.dashMenu .active,
+.dashMenu .active:hover
 {
-    color: #ff9339;
+    color: #ff9339 !important;
 }
+
 
 .dashMenu ul li a:hover
 {
