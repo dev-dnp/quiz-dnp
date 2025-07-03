@@ -7,7 +7,8 @@ import {SVGLeftMenu, SVGRightMenu} from "./Components/SVGLeftMenu";
 
 const Home = () => {
 
-    const [menuIsOpen, setMenuIsOpen] = useState(false);
+    const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
+    const [menuMobile, setMenuMobile] = useState<boolean>(menuIsOpen);
 
     return (
         <div className={style1.dashWrap}>
@@ -34,7 +35,7 @@ const Home = () => {
 
             <main className={style1.dashMain}>
 
-                <NavBar isOpen = {menuIsOpen} />
+                <NavBar dataState={{menuIsOpen, setMenuIsOpen}} menuMobile={{menuMobile, setMenuMobile}}  />
 
                 <div className={style1.centralDiv}>
                     <Outlet />

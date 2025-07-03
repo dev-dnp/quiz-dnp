@@ -18,6 +18,8 @@
     padding-right: 1rem;
     overflow-y: scroll;
     padding-bottom: 1rem;
+    transform: translateX(0);
+    transition: .3s all;
 }
 .dashHeader
 {
@@ -163,23 +165,45 @@
     background-color: #ffffff25;/* Cor do polegar ao passar o mouse */
 }
 
-.exitMenu li a 
+
+
+@media (max-width: 64rem)
 {
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.exitMenu li a span 
-{
-    visibility: hidden;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: -100%;
+    .dashAside 
+    {
+        position: absolute;
+        background-color: var(--bgC);
+        top: 5rem;
+        left: 0;
+        bottom: 0;
+    }
+
+    .menuMobileActive
+    {
+        transform: translateX(-100%);
+    }
 }
 
-.exitMenu {
-    width: 0;
+@media (min-width: 64rem)
+{
+    .exitMenu li a 
+    {
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .exitMenu li a span 
+    {
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: -100%;
+    }
+
+    .exitMenu {
+        width: 0;
+    }
 }
