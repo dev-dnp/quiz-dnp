@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import style1 from "../../styles/layoutDashboard.module.css";
-import { Menu, X } from "lucide-react";
 import NavBar from "./Components/NavBar";
 import { useState } from "react";
+import {SVGLeftMenu, SVGRightMenu} from "./Components/SVGLeftMenu";
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
                 
                 <div className={style1.menuLogo}>
                     <button className={style1.boxLogoMenu} onClick={()=> setMenuIsOpen(!menuIsOpen)}>
-                        {menuIsOpen ? <Menu /> : <X />}
+                        {menuIsOpen ? <SVGRightMenu/> : <SVGLeftMenu />}
                     </button>
 
                     <div className={style1.boxLogoHeader}>
@@ -34,7 +34,7 @@ const Home = () => {
 
             <main className={style1.dashMain}>
 
-                <NavBar />
+                <NavBar isOpen = {menuIsOpen} />
 
                 <div className={style1.centralDiv}>
                     <Outlet />

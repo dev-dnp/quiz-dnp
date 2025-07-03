@@ -5,21 +5,19 @@
 }
 .dashMain
 {
-    /* padding: 0 2rem; */
     display: flex;
     height: calc(100dvh - 5rem);
     overflow: hidden;
-    /* padding-bottom: 1rem; */
 }
 
 .dashAside 
 {
     
     border-right: var(--borderB);
-    width: 15rem;
     padding-left: 2rem;
     padding-right: 1rem;
     overflow-y: scroll;
+    padding-bottom: 1rem;
 }
 .dashHeader
 {
@@ -34,6 +32,9 @@
 
 .dashMenu {
     padding-top: 2rem;
+    min-width: 40px;
+    width: 12rem;
+    transition: 200ms;
 }
 
 .dashMenu ul
@@ -132,7 +133,6 @@
 
 .centralDiv
 {
-    /* background-color: yellow; */
     flex: 1 1 0%;
     overflow: auto;
     padding: 2rem;
@@ -161,4 +161,25 @@
 .centralDiv::-webkit-scrollbar-thumb:hover
 {
     background-color: #ffffff25;/* Cor do polegar ao passar o mouse */
+}
+
+.exitMenu li a 
+{
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.exitMenu li a span 
+{
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.exitMenu {
+    width: 0;
 }

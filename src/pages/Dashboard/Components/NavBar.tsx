@@ -1,78 +1,91 @@
 import clsx from "clsx"
-import { HouseIcon, Gamepad2, ChartColumnStacked, Trophy, ChartNoAxesCombined, Bookmark, Wrench, MessagesSquare, Info } from "lucide-react"
+import { HouseIcon, Gamepad2, ChartColumnStacked, Trophy, ChartNoAxesCombined, Bookmark, Wrench, MessagesSquare, Info, LogOut } from "lucide-react"
 import { useLocation, Link } from "react-router-dom"
 import style1 from "../../../styles/layoutDashboard.module.css"
 
-const NavBar = () => {
+type BoolMenu = {
+    isOpen: boolean
+}
+const NavBar = ({isOpen}:BoolMenu) => {
 
-    const location = useLocation();
-    const currentPath = location.pathname.split("/").at(-1);
+    const location = useLocation().pathname.split("/");
+    const currentPath = String(location.at(-1)).length > 0 ? location.at(-1) : location[location.length-2];
+
+    console.log(currentPath)
 
     return (
     <aside className={style1.dashAside}>
-        <nav className={style1.dashMenu}>
+        <nav className={clsx(style1.dashMenu, isOpen && style1.exitMenu)}>
             <ul>
+                
                 <li>
                     <Link to={""} className={clsx(currentPath == "dashboard" && style1.active)}>
                         <HouseIcon />
-                        Início
+                        <span>Início</span>
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"start-game"} className={clsx(currentPath == "start-game" && style1.active)}>
                         <Gamepad2 />
-                        Começar o quiz
+                        <span>Começar o quiz</span>
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"categories"} className={clsx(currentPath == "categories" && style1.active)}>
                         <ChartColumnStacked />
-                        Categorias
+                        <span>Categorias</span>
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"ranking"} className={clsx(currentPath == "ranking" && style1.active)}>
                         <Trophy />
-                        Ranking 
+                        <span>Ranking</span> 
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"my-results"} className={clsx(currentPath == "my-results" && style1.active)}>
                         <ChartNoAxesCombined />
-                        Meus Resultados
+                        <span>Meus Resultados</span>
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"favorites"} className={clsx(currentPath == "favorites" && style1.active)}>
                         <Bookmark />
-                        Favoritos   
+                        <span>Favoritos</span>   
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"support"} className={clsx(currentPath == "support" && style1.active)}>
                         <Wrench />
-                        Suporte 
+                        <span>Suporte</span> 
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"feedback"} className={clsx(currentPath == "feedback" && style1.active)}>
                         <MessagesSquare />
-                        Feedback  
+                        <span>Feedback</span>  
                     </Link>
                 </li>
 
                 <li>
                     <Link to={"about"} className={clsx(currentPath == "about" && style1.active)}>
                         <Info />
-                        Sobre 
+                        <span>Sobre</span> 
                     </Link>
+                </li>
+
+                <li>
+                    <a href={"/login"}>
+                        <LogOut />
+                        <span>Sair</span> 
+                    </a>
                 </li>
             </ul>
         </nav>
