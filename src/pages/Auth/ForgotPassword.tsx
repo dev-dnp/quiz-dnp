@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import style from "./styles/login.module.css";
+import style from "../../styles/login.module.css";
 import {useForm} from "react-hook-form";
 
 type FormData = {

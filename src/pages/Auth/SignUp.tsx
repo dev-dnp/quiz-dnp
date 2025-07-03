@@ -1,4 +1,4 @@
-import style from "./styles/login.module.css";
+import style from "../../styles/login.module.css";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
