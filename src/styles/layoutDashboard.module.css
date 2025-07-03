@@ -115,7 +115,13 @@
     border-radius: .25rem;
     display: grid;
     place-items: center;
-    cursor: pointer;}
+    cursor: pointer;
+}
+
+.boxLogoMenu svg 
+{
+    color: #fff;
+}
 
 .menuLogo
 {
