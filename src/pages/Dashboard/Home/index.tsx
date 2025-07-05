@@ -34,6 +34,7 @@ const Home = () => {
       <div>
         <div className={style.divTable}>
           <table className={style.tableBox}>
+            
             <thead>
               <tr>
               <th>ID</th>

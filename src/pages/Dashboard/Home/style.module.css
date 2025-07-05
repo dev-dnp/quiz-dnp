@@ -105,7 +105,7 @@
     border: var(--borderB);
     border-radius: .25rem;
     margin-top: 1rem;
-    width: fit-content;
+    min-width: 21.25rem;
     overflow: hidden;
     overflow-x: auto;
 
