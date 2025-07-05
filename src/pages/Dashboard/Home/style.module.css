@@ -60,19 +60,15 @@
     flex-grow: 1;
     min-width: 21.25rem;
     max-width: 24rem;
-}
-
-.boxCard:hover 
-{
-    border-color: #FF8C00;
+    border-color: #00e3ff;
 }
 
 .boxIconCard
 {
-    color: #FF8C00 ;
+    color: #00e3ff ;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #513f2a;
+    background-color: #00e3ff12;
     border-radius: 50%;
     place-items: center;
     display: grid;
@@ -102,6 +98,13 @@
     flex-wrap: wrap;
     padding-bottom: 2rem;
     border-bottom: var(--borderB);
+}
+
+.divTable 
+{
+    border: var(--borderB);
+    border-radius: .25rem;
+    margin-top: 1rem;
 }
 
 .tableBox

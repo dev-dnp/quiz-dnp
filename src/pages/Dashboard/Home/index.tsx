@@ -31,8 +31,8 @@ const Home = () => {
       {/* SECTION */}
 
       <div>
-        <div>
-          <table className={style.tableBox} border={1}>
+        <div className={style.divTable}>
+          <table className={style.tableBox}>
             <thead>
               <tr>
               <th>ID</th>
