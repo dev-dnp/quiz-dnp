@@ -58,7 +58,6 @@
     border: var(--borderA);
     transition: .3s;
     flex-grow: 1;
-    min-width: 21.25rem;
     max-width: 24rem;
     border-color: #00e3ff;
 }
@@ -108,6 +107,7 @@
     min-width: 21.25rem;
     overflow: hidden;
     overflow-x: auto;
+    max-width: 50rem;
 
 }
 
@@ -156,3 +156,12 @@
 .iconColorSuccess {color: #7eff7e;}
 .iconColorError {color: #ff6d6d;}
 .iconColorWarnning {color: #faff39;}
+
+@media (max-width: 680px)
+{
+    .primarySeactionCard
+    {
+        justify-content: center;
+    }
+
+}
