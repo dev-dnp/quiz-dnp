@@ -1,5 +1,6 @@
-import { Flame, TrendingUp } from "lucide-react";
+import { Flame, TrendingDown, TrendingUp } from "lucide-react";
 import style from "./style.module.css";
+import clsx from "clsx";
 
 const Home = () => {
   return (
@@ -46,8 +47,36 @@ const Home = () => {
 
               <tr>
                 <td>125</td>
+                <td className={clsx(style.cellDouble)}>
+                  <TrendingUp className={style.iconColorSuccess}/>
+                  <span>1.250</span>
+                </td>
                 <td>
-                  <TrendingUp />
+                  04.07.2025
+                </td>
+                <td>
+                  06:14 am
+                </td>
+              </tr>
+
+              <tr>
+                <td>125</td>
+                <td className={clsx(style.cellDouble)}>
+                  <TrendingUp className={style.iconColorWarnning}/>
+                  <span>1.250</span>
+                </td>
+                <td>
+                  04.07.2025
+                </td>
+                <td>
+                  06:14 am
+                </td>
+              </tr>
+
+              <tr>
+                <td>125</td>
+                <td className={clsx(style.cellDouble)}>
+                  <TrendingDown className={style.iconColorError}/>
                   <span>1.250</span>
                 </td>
                 <td>

@@ -105,18 +105,30 @@
     border: var(--borderB);
     border-radius: .25rem;
     margin-top: 1rem;
+    width: fit-content;
+    overflow: hidden;
+    overflow-x: auto;
+
 }
 
 .tableBox
 {
     border-collapse: collapse;
     border-radius: 5px;
+    font-size: var(--text-body);
+    width: 100%;
+}
+
+.tableBox tr 
+{
+    border-bottom: var(--borderB);
 }
 
 .tableBox thead th 
 {
     width: fit-content;
     text-align: left;
+    font-weight: 500;
 }
 
 .tableBox thead th,
@@ -124,3 +136,23 @@
 {
     padding: .5rem;
 }
+
+.tableBox thead tr {
+    background-color: #1f2123;
+}
+
+.tableBox tbody td
+{
+    font-size: var(--text-small);
+}
+
+
+.cellDouble{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.iconColorSuccess {color: #7eff7e;}
+.iconColorError {color: #ff6d6d;}
+.iconColorWarnning {color: #faff39;}
