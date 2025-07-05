@@ -157,6 +157,23 @@
 .iconColorError {color: #ff6d6d;}
 .iconColorWarnning {color: #faff39;}
 
+.mainContentHome 
+{
+    max-width: 48rem;
+}
+
+.WrapHomeDash 
+{
+    container: dashHomeContent / inline-size;
+}
+
+@container dashHomeContent (width > 500px) {
+    .tableBox 
+    {
+        background-color: red !important;
+    }
+}
+
 @media (max-width: 680px)
 {
     .primarySeactionCard
@@ -165,3 +182,4 @@
     }
 
 }
+
