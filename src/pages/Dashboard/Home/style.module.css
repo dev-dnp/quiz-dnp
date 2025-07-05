@@ -1,4 +1,123 @@
-.boxCard 
+
+.boxProfileHome
 {
-    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bgC);
+    max-width: 24rem;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    border: var(--borderA);
+    min-width: 21.25rem;
+    flex-grow: 1;
+}
+
+.profilePhoto 
+{
+    width: 3.75rem;
+    height: 3.75rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profilePhoto img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nameEmailProfile
+{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.nameEmailProfile h2
+{
+    font-size: 1.3rem;
+}
+
+.nameEmailProfile span 
+{
+    font-size: var(--text-body);
+    color: var(--colorTextB);
+
+}
+
+.boxCard
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bgC);
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    border: var(--borderA);
+    transition: .3s;
+    flex-grow: 1;
+    min-width: 21.25rem;
+    max-width: 24rem;
+}
+
+.boxCard:hover 
+{
+    border-color: #FF8C00;
+}
+
+.boxIconCard
+{
+    color: #FF8C00 ;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #513f2a;
+    border-radius: 50%;
+    place-items: center;
+    display: grid;
+}
+
+.cardDescription 
+{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.titleDescription
+{
+    letter-spacing: 2px;
+}
+
+.cardDescription span 
+{
+    color: var(--colorTextB);
+}
+
+.primarySeactionCard
+{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    border-bottom: var(--borderB);
+}
+
+.tableBox
+{
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.tableBox thead th 
+{
+    width: fit-content;
+    text-align: left;
+}
+
+.tableBox thead th,
+.tableBox tbody td
+{
+    padding: .5rem;
 }
