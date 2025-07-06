@@ -197,7 +197,9 @@
 
 .dailyChallengeBox
 {
-    background-color: #1a1a1e;
+    /* background-color: #1a1a1e; */
+    background: url("/challenge-jump.jpg") no-repeat left/cover;
+    /* background-size: contain; */
     display: grid;
     place-items: center;
     border: var(--borderB);
@@ -212,9 +214,10 @@
     gap: .5rem;
     font-size: var(--text-body);
     color: var(--colorTextA);
-    background-color: #29292e;
+    background-color: #29292e8f;
     padding: .5rem 1rem;
     border-radius: 999px;
+    backdrop-filter: blur(10px);
 }
 
 .dailyChallengeBox .link:hover 
