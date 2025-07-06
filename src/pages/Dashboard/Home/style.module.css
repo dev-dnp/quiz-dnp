@@ -170,7 +170,7 @@
 @container dashHomeContent (width > 500px) {
     .tableBox 
     {
-        background-color: red !important;
+        /* background-color: red !important; */
     }
 }
 
