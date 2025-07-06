@@ -1,0 +1,30 @@
+.rdp-root {
+  --rdp-accent-color: var(--colorTextA);
+  --rdp-selected-border: 2px solid var(--bgB);
+  --rdp-disabled-opacity: 1;
+
+   transform: scale(.8);
+   width: fit-content;
+   transform-origin: center left;
+
+}
+
+.rdp-today:not(.rdp-outside)
+{
+  color: var(--colorTextD);
+  font-weight: 500;
+  background-color: red;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+}
+
+
+.my-booked-class button,
+.rdp-selected .rdp-day_button
+{
+
+  border: 1px solid tomato;
+  border-radius: 4px;
+
+}

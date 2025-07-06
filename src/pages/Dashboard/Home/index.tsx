@@ -1,6 +1,7 @@
 import { Flame, TrendingDown, TrendingUp, Gamepad2 } from "lucide-react";
 import style from "./style.module.css";
 import clsx from "clsx";
+import MyCalendarCustom from "../Components/MyCalendarCustom";
 
 const Home = () => {
   return (
@@ -125,7 +126,7 @@ const Home = () => {
             <h4 className={style.titleBox}>Calendário de atividade</h4>
             
             <div className={style.selfCalendar}>
-              Calendario
+              <MyCalendarCustom />
             </div>
          </div>
       </div>
