@@ -1,4 +1,4 @@
-import { Flame, TrendingDown, TrendingUp } from "lucide-react";
+import { Flame, TrendingDown, TrendingUp, Gamepad2 } from "lucide-react";
 import style from "./style.module.css";
 import clsx from "clsx";
 
@@ -95,6 +95,39 @@ const Home = () => {
             </table>
           </div>
         </div>
+      </div>
+
+      <div className={style.asideDashHome}>
+         {/* Card desafio */}
+
+         <div className={style.dailyChallenge}>
+            <h4 className={style.titleBox}>Desafio do dia</h4>
+            <div  className={style.dailyChallengeBox}>
+              <a href="" className={style.link}>
+                <Gamepad2 />
+                <span>Jogar agora</span>
+              </a>
+            </div>
+         </div>
+
+         <div className={style.quickLinks}>
+            <h4 className={style.titleBox}>Links rápidos</h4>
+
+            <div className={style.quickLinksList}>
+              <a href="#">Novos Quiz</a>
+              <a href="#">Estátisticas</a>
+              <a href="#">Quiz recomendados</a>
+              <a href="#">Novidades</a>
+            </div>
+         </div>
+
+         <div className={style.activityCalendar}>
+            <h4 className={style.titleBox}>Calendário de atividade</h4>
+            
+            <div className={style.selfCalendar}>
+              Calendario
+            </div>
+         </div>
       </div>
     </div>
   )
