@@ -189,6 +189,12 @@
     margin: .6rem 0;
 }
 
+.dailyChallenge, .quickLinks
+{
+    border-bottom: var(--borderB);
+    padding-bottom: 1.5rem;
+}
+
 .dailyChallengeBox
 {
     background-color: #1a1a1e;
@@ -233,6 +239,12 @@
     color: var(--colorTextB);
     border: var(--borderB);
 }
+
+.quickLinks .quickLinksList a:hover 
+{
+    background-color: #292c2e;
+}
+
 
 
 
