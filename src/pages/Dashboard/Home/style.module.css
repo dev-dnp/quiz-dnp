@@ -163,12 +163,18 @@
     max-width: 45rem;
 }
 
+.toolWrap
+{
+
+    container: dashHomeContent / inline-size;
+}
+
 .WrapHomeDash 
 {
-    container: dashHomeContent / inline-size;
     display: flex;
     gap: 2rem;
 }
+
 
 .asideDashHome 
 {
@@ -253,10 +259,10 @@
 
 
 
-@container dashHomeContent (width > 500px) {
-    .tableBox 
-    {
-        /* background-color: red !important; */
+@container dashHomeContent (width < 750px) {
+    .WrapHomeDash {
+        display: flex;
+        flex-direction: column;
     }
 }
 
