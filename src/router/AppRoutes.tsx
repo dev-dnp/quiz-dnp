@@ -15,59 +15,63 @@ import Support from "../pages/Dashboard/Support";
 
 
 export const AppRoutes = [
-  {
+    {   
+        path: "/",
+        element: <h1>Hello world! ✌</h1>
+    },
+    {
       path: "/login",
       element: <Login />
-  },
-  {
-      path: "/signup",
-      element: <SignUp />
-  },
-  {
-      path: "/forgot-password",
-      element: <ForgotPassword />
-  },
-  {
-      path: "/dashboard",
-      element: <LayoutDashboard />,
-      children: [
-        {
-            index: true,
-            path: "",
-            element: <Home />
-        },
-        {
-            path: "start-game",
-            element: <StartGame />
-        },
-        {
-            path: "categories",
-            element: <Categories />
-        },
-        {
-            path: "ranking",
-            element: <Ranking />
-        },
-        {
-            path: "my-results",
-            element: <MyResults />
-        },
-        {
-            path: "favorites",
-            element: <Favorites />
-        },
-        {
-            path: "support",
-            element: <Support />
-        },
-        {
-            path: "feedback",
-            element: <Feedback />
-        },
-        {
-            path: "about",
-            element: <About />
-        }
-      ]
-  },
+    },
+    {
+        path: "/signup",
+        element: <SignUp />
+    },
+    {
+        path: "/forgot-password",
+        element: <ForgotPassword />
+    },
+    {
+        path: "/dashboard",
+        element: <LayoutDashboard />,
+        children: [
+            {
+                index: true,
+                path: "",
+                element: <Home />
+            },
+            {
+                path: "start-game",
+                element: <StartGame />
+            },
+            {
+                path: "categories",
+                element: <Categories />
+            },
+            {
+                path: "ranking",
+                element: <Ranking />
+            },
+            {
+                path: "my-results",
+                element: <MyResults />
+            },
+            {
+                path: "favorites",
+                element: <Favorites />
+            },
+            {
+                path: "support",
+                element: <Support />
+            },
+            {
+                path: "feedback",
+                element: <Feedback />
+            },
+            {
+                path: "about",
+                element: <About />
+            }
+        ]
+    },
 ]
