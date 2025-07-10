@@ -17,7 +17,7 @@ import Support from "../pages/Dashboard/Support";
 export const AppRoutes = [
     {   
         path: "/",
-        element: <h1>Hello world! ✌</h1>
+        element: <h1>Hello world!✌</h1>
     },
     {
       path: "/login",
