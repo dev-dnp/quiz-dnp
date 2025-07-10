@@ -1,4 +1,3 @@
-import MyCalendarCustom from "../Components/MyCalendarCustom";
 
 const Ranking = () => {
   return (
