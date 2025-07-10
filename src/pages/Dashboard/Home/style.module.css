@@ -59,6 +59,7 @@
     transition: .3s;
     flex-grow: 1;
     max-width: 24rem;
+    min-width: 21.25rem;
     border-color: #00e3ff;
 }
 
@@ -102,9 +103,9 @@
 .divTable 
 {
     border: var(--borderB);
-    border-radius: .25rem;
+    border-radius: .5rem;
     margin-top: 1rem;
-    min-width: 21.25rem;
+    /* min-width: 21.25rem; */
     overflow: hidden;
     overflow-x: auto;
     max-width: 100%;
@@ -272,7 +273,7 @@
     }
 }
 
-@media (max-width: 680px)
+@media (max-width: 790px)
 {
     .primarySeactionCard
     {
