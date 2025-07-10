@@ -12,7 +12,7 @@ const Login = () => {
     const {register, handleSubmit, formState: {errors}} = useForm<FormData>();
 
     const formOnSubmit = (data: FormData) => {
-        // 🔴 Tratamento dos dados recebidos
+        console.log(data, errors);
     }
 
     return (
