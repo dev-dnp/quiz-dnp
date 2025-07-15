@@ -1,8 +1,9 @@
+import style from "./style.module.css"
 
 const StartGame = () => {
   return (
     <div>
-      <h1>Começar o Jogo</h1>
+      <div className={style.boxGame}></div>
     </div>
   )
 }
